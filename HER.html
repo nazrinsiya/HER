@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women Empowerment Hub</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4,#fad0c4);
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:60px 20px;
+    color:white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header h1{
+    font-size:40px;
+    font-weight:700;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+    backdrop-filter:blur(10px);
+    background:rgba(255,255,255,0.2);
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#880e4f;
+}
+
+/* Section */
+.section{
+    padding:60px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+/* Glass Card */
+.card{
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    width:80%;
+    max-width:800px;
+    color:white;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+    transition:0.4s;
+    animation: slideUp 1s ease-in-out;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* Buttons */
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg,#c2185b,#880e4f);
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+/* Details */
+.details{
+    display:none;
+    margin-top:15px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    color:white;
+}
+
+/* Chat */
+#chatbox{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:280px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(15px);
+    border-radius:15px;
+    padding:15px;
+    color:white;
+}
+
+#chatMessages{
+    height:150px;
+    overflow-y:auto;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+#chatInput{
+    width:100%;
+    padding:8px;
+    border:none;
+    border-radius:10px;
+}
+
+/* Animations */
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes slideUp{
+    from{transform:translateY(40px);opacity:0;}
+    to{transform:translateY(0);opacity:1;}
+}
+
+/* Responsive */
+@media(max-width:600px){
+    header h1{font-size:28px;}
+    .card{width:95%;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌸 Women Empowerment Hub</h1>
+    <p>Empowering Women Through Knowledge, Safety & Equality</p>
+</header>
+
+<nav>
+    <a href="#rights">Rights</a>
+    <a href="#health">Health</a>
+    <a href="#career">Career</a>
+    <a href="#safety">Safety</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="rights" class="section">
+<div class="card">
+<h2>⚖ Legal Rights</h2>
+<p>Know your rights and stand strong.</p>
+<button onclick="toggleDetails('r')">View Details</button>
+<div id="r" class="details">
+<ul>
+<li><strong>Protection of Women from Domestic Violence Act, 2005</strong> – Protects women from physical, emotional, and financial abuse.</li>
+
+<li><strong>Sexual Harassment of Women at Workplace Act, 2013</strong> – Every workplace must have an Internal Complaints Committee (ICC).</li>
+
+<li><strong>Equal Remuneration Act, 1976</strong> – Equal pay for equal work.</li>
+
+<li><strong>Maternity Benefit Act, 1961</strong> – 26 weeks paid maternity leave.</li>
+
+<li><strong>Right to Free Legal Aid</strong> – Free legal support via District Legal Services Authority.</li>
+
+<li><strong>Right to Property</strong> – Women have equal rights in ancestral property under the Hindu Succession Amendment Act, 2005.</li>
+
+<li><strong>Dowry Prohibition Act, 1961</strong> – Giving/taking dowry is illegal.</li>
+
+<li><strong>Child Marriage Prohibition Act, 2006</strong> – Legal marriage age: 18 years.</li>
+</ul>
+
+<p><strong>Need Legal Help?</strong></p>
+<p>📞 National Women Helpline: 181</p>
+<p>📞 National Commission for Women: 7827170170</p>
+</div>
+
+
+</div>
+</div>
+</section>
+
+<section id="health" class="section">
+<div class="card">
+<h2>🩺 Health Awareness</h2>
+<p>Care for your physical & mental health.</p>
+<button onclick="toggleDetails('h')">Learn More</button>
+<div id="h" class="details">
+<ul>
+<li><strong>Menstrual Health:</strong> Maintain hygiene, track cycles, and consult doctors for irregular periods.</li>
+
+<li><strong>PCOS & PCOD Awareness:</strong> Early symptoms include irregular cycles, acne, weight gain.</li>
+
+<li><strong>Breast Cancer Awareness:</strong> Monthly self-examination is important.</li>
+
+<li><strong>Cervical Cancer Prevention:</strong> HPV vaccination & regular Pap smear tests.</li>
+
+<li><strong>Mental Health Support:</strong> Seek therapy for anxiety, depression, trauma.</li>
+
+<li><strong>Pregnancy & Postnatal Care:</strong> Regular check-ups and nutrition are essential.</li>
+
+<li><strong>Anemia Prevention:</strong> Iron-rich diet (spinach, dates, jaggery).</li>
+
+<li><strong>Government Schemes:</strong>
+    <ul>
+        <li>Janani Suraksha Yojana</li>
+        <li>Pradhan Mantri Matru Vandana Yojana</li>
+    </ul>
+</li>
+</ul>
+
+<p>📞 Mental Health Helpline (KIRAN): 1800-599-0019</p>
+</div>
+<ul>
+<li>Menstrual Health</li>
+<li>PCOS Awareness</li>
+<li>Mental Health Support</li>
+<li>Pregnancy Care</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="education" class="section">
+    <div class="card">
+        <h2>🎓 Education & Career</h2>
+        <button onclick="toggleDetails('eduDetails')">Explore Opportunities</button>
+        <div id="eduDetails" class="details">
+<ul>
+<li><strong>Government Scholarships:</strong>
+    <ul>
+        <li>National Scholarship Portal</li>
+        <li>AICTE Pragati Scholarship for Girls</li>
+        <li>Post Matric Scholarships</li>
+    </ul>
+</li>
+
+<li><strong>Skill Development Programs:</strong>
+    <ul>
+        <li>Skill India Mission</li>
+        <li>PMKVY (Pradhan Mantri Kaushal Vikas Yojana)</li>
+        <li>Digital Literacy Programs</li>
+    </ul>
+</li>
+
+<li><strong>Online Learning Platforms:</strong>
+    <ul>
+        <li>SWAYAM</li>
+        <li>Coursera</li>
+        <li>Udemy</li>
+    </ul>
+</li>
+
+<li><strong>Entrepreneurship Support:</strong>
+    <ul>
+        <li>Stand Up India Scheme</li>
+        <li>Women Entrepreneurship Platform (WEP)</li>
+        <li>MUDRA Loans</li>
+    </ul>
+</li>
+
+<li><strong>Job Portals:</strong>
+    <ul>
+        <li>Naukri.com</li>
+        <li>LinkedIn Jobs</li>
+        <li>Apna App</li>
+    </ul>
+</li>
+
+<li><strong>Career Guidance Tips:</strong>
+    <ul>
+        <li>Build a professional CV</li>
+        <li>Learn digital skills</li>
+        <li>Practice interview skills</li>
+        <li>Create LinkedIn profile</li>
+    </ul>
+</li>
+</ul>
+</div>
+            <ul>
+                <li>Government scholarships</li>
+                <li>Skill development programs</li>
+                <li>Online courses</li>
+                <li>Entrepreneurship guidance</li>
+                <li>Job portals</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="section">
+<div class="card">
+<h2>💰 Financial Independence</h2>
+<button onclick="toggleDetails('finance')">Learn More</button>
+
+<div id="finance" class="details">
+
+<h3>🏦 1. Banking & Smart Savings</h3>
+<ul>
+<li>Open a personal savings account in your own name.</li>
+<li>Maintain an emergency fund (minimum 3–6 months expenses).</li>
+<li>Use Jan Dhan Yojana for zero balance banking access.</li>
+<li>Start Recurring Deposits (RD) for disciplined savings.</li>
+<li>Enable SMS & email banking alerts for transparency.</li>
+</ul>
+
+<h3>📊 2. Budgeting & Money Management</h3>
+<ul>
+<li>Track income and expenses monthly.</li>
+<li>Follow the 50-30-20 rule:
+    <ul>
+        <li>50% Needs (rent, food, bills)</li>
+        <li>30% Wants (shopping, entertainment)</li>
+        <li>20% Savings & Investments</li>
+    </ul>
+</li>
+<li>Use budgeting apps or maintain a financial diary.</li>
+<li>Avoid unnecessary loans and credit card debt.</li>
+</ul>
+
+<h3>📈 3. Investment Awareness</h3>
+<ul>
+<li>Start SIP (Systematic Investment Plan) in mutual funds.</li>
+<li>Public Provident Fund (PPF) for long-term savings.</li>
+<li>Fixed Deposits (FD) for low-risk returns.</li>
+<li>Sukanya Samriddhi Yojana (for girl child future savings).</li>
+<li>National Pension Scheme (NPS) for retirement planning.</li>
+<li>Diversify investments to reduce financial risk.</li>
+</ul>
+
+<h3>💼 4. Entrepreneurship & Career Growth</h3>
+<ul>
+<li>Start home-based businesses (baking, tailoring, tuition, online crafts).</li>
+<li>Register MSME through Udyam Registration.</li>
+<li>Apply for MUDRA Loans under Pradhan Mantri Mudra Yojana.</li>
+<li>Use social media marketing (Instagram, WhatsApp Business).</li>
+<li>Learn digital skills (content creation, coding, graphic design).</li>
+</ul>
+
+<h3>🤝 5. Self-Help Groups (SHGs) & Microfinance</h3>
+<ul>
+<li>Join SHGs for small savings & community loans.</li>
+<li>Participate in government-supported women enterprise schemes.</li>
+<li>Access microfinance institutions for small business funding.</li>
+</ul>
+
+<h3>🛡 6. Financial Safety & Fraud Protection</h3>
+<ul>
+<li>Never share OTP, ATM PIN, or bank passwords.</li>
+<li>Avoid clicking suspicious links or fake loan offers.</li>
+<li>Verify investment platforms before investing.</li>
+<li>Report financial fraud to bank immediately.</li>
+<li>Register complaints via RBI Ombudsman if needed.</li>
+</ul>
+
+<h3>📚 7. Financial Education Resources</h3>
+<ul>
+<li>Attend RBI Financial Literacy Camps.</li>
+<li>Follow SEBI investor awareness programs.</li>
+<li>Use government financial literacy portals.</li>
+<li>Learn tax basics and income tax filing.</li>
+</ul>
+
+<h3>🎯 8. Long-Term Financial Planning</h3>
+<ul>
+<li>Create retirement planning strategy.</li>
+<li>Buy health insurance for financial security.</li>
+<li>Consider term life insurance policies.</li>
+<li>Prepare a financial goal roadmap (5-year & 10-year goals).</li>
+</ul>
+
+</div>
+<ul>
+<li>Open a bank account in your name.</li>
+<li>Learn budgeting & saving techniques.</li>
+<li>Understand digital payments (UPI, Net Banking).</li>
+<li>Invest in SIPs or mutual funds.</li>
+<li>Start small businesses from home.</li>
+<li>Government Self-Help Groups (SHGs).</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<section id="safety" class="section">
+<div class="card">
+<h2>🚨 Emergency Support</h2>
+<a href="tel:181"><button>Call 181</button></a>
+<a href="tel:100"><button>Call Police</button></a>
+</div>
+</section>
+
+<section id="contact" class="section">
+<div class="card">
+<h2>📢 Anonymous Report</h2>
+<textarea placeholder="Describe your issue..."></textarea>
+<button onclick="alert('Report Submitted')">Submit</button>
+</div>
+</section>
+
+<footer>
+© 2026 Women Empowerment Hub
+</footer>
+
+<!-- Chat -->
+<div id="chatbox">
+<div id="chatMessages"></div>
+<input type="text" id="chatInput" placeholder="Ask for help..." onkeydown="chat(event)">
+</div>
+
+<script>
+function toggleDetails(id){
+let e=document.getElementById(id);
+e.style.display=e.style.display==="block"?"none":"block";
+}
+
+function chat(event){
+if(event.key==="Enter"){
+let input=document.getElementById("chatInput");
+let msg=input.value;
+let chat=document.getElementById("chatMessages");
+
+chat.innerHTML+="<div><b>You:</b> "+msg+"</div>";
+
+let reply="Please contact 181 for emergency support.";
+if(msg.toLowerCase().includes("job")) reply="Explore skill programs for career growth.";
+if(msg.toLowerCase().includes("health")) reply="Consult a doctor or health professional.";
+
+chat.innerHTML+="<div><b>Support:</b> "+reply+"</div>";
+input.value="";
+chat.scrollTop=chat.scrollHeight;
+}
+}
+</script>
+
+</body>
+</html>
